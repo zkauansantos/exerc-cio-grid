@@ -1,0 +1,63 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f7f7f7;
+  max-width: 900px;
+  display: grid;
+  grid-template-areas: "destaque propaganda"
+  "destaque sugeridos";
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 56px 1fr  ;
+  padding: 38px 38px 19px 38px  ;
+  gap: 5px;
+}
+
+.video-destaque {
+  grid-area: destaque;
+}
+
+.propaganda {
+  grid-area: propaganda;
+  margin-bottom: 20px ;
+}
+
+.videos-sugeridos {
+  grid-area: sugeridos;
+}
+
+.video-destaque .informacoes .titulo {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.video-destaque .informacoes .visualisacoes {
+  font-size: 14px ;
+  margin-top: 7px;
+  margin-bottom: 9px;
+}
+
+.videos-sugeridos .videos {
+  display: flex;
+  margin-top: 15px;
+}
+
+ .videos .informacoes .titulo {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.videos .informacoes {
+  margin-left: 5px;
+
+}
+
+.videos .informacoes p {
+  font-size: 11px;
+  margin-bottom: 3px;
+}
